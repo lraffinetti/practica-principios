@@ -1,5 +1,7 @@
 package org.example.ejercicio7;
 
+// Capaz es MUY de juguete(?).
+
 class Jugador {
     private int puntosDeVida;
 
