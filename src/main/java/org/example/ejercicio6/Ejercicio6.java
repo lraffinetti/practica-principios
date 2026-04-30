@@ -23,13 +23,19 @@ class CarritoDeCompras {
 }
 
 class ServicioWeb {
-    public void agregarAlCarrito(CarritoDeCompras carrito, Item item) {
+    private CarritoDeCompras carrito = new CarritoDeCompras();
+
+    public void agregarAlCarrito(Item item) {
         carrito.getItems().add(item);
     }
 }
 
 public class Ejercicio6 {
     public static void main(String[] args) {
+        ServicioWeb servicioWeb = new ServicioWeb();
+        Item item1 = new Item();
+
+        servicioWeb.agregarAlCarrito(item1);
 
     }
 }
