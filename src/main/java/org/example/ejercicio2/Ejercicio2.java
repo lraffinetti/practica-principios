@@ -1,4 +1,6 @@
 package org.example.ejercicio2;
+import java.util.ArrayList;
+import java.util.List;
 
 class Usuario {
     private String nombre;
@@ -31,13 +33,22 @@ class Usuario {
 
 class BaseDeDatos {
 
+    List<Usuario> usuarios;
+    
+    public BaseDeDatos(){
+        usuarios = new ArrayList<>();
+    }
+
     public void guardar(Usuario usuario) {
+        usuarios.add(usuario);
     }
 }
 
 
 public class Ejercicio2 {
     public static void main(String[] args){
+        Usuario usuario = new Usuario("Lucas", "lucas@fi.uba.ar");
 
+        usuario.guardar();
     }
 }
