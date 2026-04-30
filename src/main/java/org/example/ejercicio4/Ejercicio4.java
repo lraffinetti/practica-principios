@@ -11,6 +11,10 @@ class Jugador {
         this.posicion = posicion;
     }
 
+    public String getNombre(){
+        return nombre;
+    }
+
     public int getSueldo(){
 
         if (posicion == "Delantero"){
@@ -36,7 +40,7 @@ class FCBarcelona {
 
     public void sueldosJugadores(){
         for(Jugador jugador : jugadores){
-            System.out.println(jugador.getSueldo());
+            System.out.println("Sueld de " + jugador.getNombre() + "es: " + jugador.getSueldo());
         }
     }
 
